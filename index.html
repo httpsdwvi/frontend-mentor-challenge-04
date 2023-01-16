@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main class="card-container">
+    <div class="card">
+      <div class="card-img">
+        <img src="./images/image-equilibrium.jpg" alt="NFT">
+      </div>
+      <div class="card-content">
+        <div class="card-title">
+          <h1> Equilibrium #3429 </h1>
+        </div>
 
-  Equilibrium #3429
+        <p>Our Equilibrium collection promotes balance and calm.</p>
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="card-price-date">
+          <div class="card-price"> <img class="icon-eth" src="./images/icon-ethereum.svg" alt="Ethereum"> 0.041 ETH </div>
+          <div class="card-date"> <img class="icon-clock" src="./images/icon-clock.svg" alt="Ethereum"> 3 days left </div>
+        </div>
+        <hr>
+        <div class="card-credits">
+          <img class="avatar" src="./images/image-avatar.png" alt="Avatar">
+          <p> Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/httpsdwvi/frontend-mentor-challenge-04" target="_blank">httpsdwvi</a>.
+  </footer>
 </body>
+
 </html>
