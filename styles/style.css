@@ -20,8 +20,14 @@ html {
 
 .card {
     height: auto;
-    width: 350px;
+    max-width: 350px;
     background-color: hsl(216, 50%, 16%);
+    box-shadow: 0 1px 1px #0C1729,
+    0 2px 2px #0C1729,
+    0 4px 4px #0C1729,
+    0 8px 8px #0C1729,
+    0 16px 16px #0C1729,
+    0 64px 64px #0C1729;
 }
 
 .card-content {
@@ -32,28 +38,74 @@ html {
 }
 
 .card-img {
+    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
 }
 
 h1 {
-    color: #1EF5EE;
+    color: #fff;
     font-size: 1.25rem;
 }
 
-img {
+h1:hover, p span:hover {
+    cursor: pointer;
+    color: #1EF5EE;
+    transition: 400ms all;
+}
+
+.img-nft {
+    height: auto;
     width: 100%;
 }
 
-img,
+.img-nft,
 .card {
     border-radius: 15px;
 }
 
-p {
+.center {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    height: 310px;
+    width: 310px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    transition: 400ms all;
+}
+
+.icon-view {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 400ms all;
+}
+
+.center:hover + .icon-view {
+    display: block;
+    transition: 400ms all;
+}
+
+.center:hover {
+    cursor: pointer;
+    background-color: #1EF5EE;
+    opacity: 50%;
+}
+
+.p-content {
+    padding-top: 30px;
     font-size: 1.125rem;
     color: hsl(0, 0%, 100%);
+    font-weight: 300;
 }
 
 .card-price-date {
@@ -107,10 +159,18 @@ hr {
     height: 32px;
     width: 32px;
     outline: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.p-credits {
+    font-size: 1.125rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
 }
 
 p span {
-    color: #1EF5EE;
+    color: #fff;
+    transition: 400ms all;
 }
 
 .attribution {
